@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
     s.author       = { "Syed Haris Ali" => "syedhali07@gmail.com" }
     s.ios.deployment_target = '11.0'
-    s.osx.deployment_target = '10.8'
+    s.osx.deployment_target = '10.15'
     s.source       = { :git => "https://github.com/iDevelopper/EZAudio.git", :tag => s.version }
     s.exclude_files = [ 'EZAudio/TPCircularBuffer.{h,c}', 'EZAudio/EZAudioiOS.h', 'EZAudio/EZAudioOSX.h' ]
     s.ios.frameworks = 'AudioToolbox','AVFoundation', 'Accelerate'

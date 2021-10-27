@@ -113,7 +113,9 @@ UInt32 const EZAudioPlotDefaultMaxHistoryBufferLength = 8192;
 - (void)initPlot
 {
     self.shouldCenterYAxis = YES;
-    self.shouldOptimizeForRealtimePlot = YES;
+    // TODO: Waveform update (audioplot) when recording the microphone (no need for us). If YES, the created displayLink is not properly deallocated.
+    //self.shouldOptimizeForRealtimePlot = YES;
+    self.shouldOptimizeForRealtimePlot = NO;
     self.gain = 1.0;
     self.plotType = EZPlotTypeBuffer;
     self.shouldMirror = NO;

@@ -23,4 +23,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <EZAudioOSX/EZAudio.h>
+// TODO: Avoid import error
+//#import <EZAudioOSX/EZAudio.h>
+#import "EZAudio.h"

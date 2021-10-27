@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
     s.osx.deployment_target = '10.8'
     s.source       = { :git => "https://github.com/iDevelopper/EZAudio.git", :tag => s.version }
     s.exclude_files = [ 'EZAudio/TPCircularBuffer.{h,c}', 'EZAudio/EZAudioiOS.h', 'EZAudio/EZAudioOSX.h' ]
-    s.ios.frameworks = 'AudioToolbox','AVFoundation','GLKit', 'Accelerate'
-    s.osx.frameworks = 'AudioToolbox','AudioUnit','CoreAudio','QuartzCore','OpenGL','GLKit', 'Accelerate'
+    s.ios.frameworks = 'AudioToolbox','AVFoundation', 'Accelerate'
+    s.osx.frameworks = 'AudioToolbox','AudioUnit','CoreAudio','QuartzCore','OpenGL', 'Accelerate'
     s.requires_arc = true;
     s.default_subspec = 'Full'
     s.subspec 'Core' do |core|

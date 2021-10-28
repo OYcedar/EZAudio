@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'Full' do |full|
-        full.dependency 'TPCircularBuffer', '1.1'
+        #full.dependency 'TPCircularBuffer', '1.1'
+        full.dependency 'TPCircularBuffer'
         full.dependency 'EZAudio/Core'
     end
 end
